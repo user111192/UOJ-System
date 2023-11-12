@@ -513,10 +513,13 @@ EOD;
 	<?php endif ?>
 	<?php if (!isset($contest['extra_config']['contest_type']) || $contest['extra_config']['contest_type']=='OI'):?>
 	<p>此次比赛为OI赛制。</p>
-	<p><strong>注意：比赛时只显示测样例的结果。</strong></p>
+	<p><strong>注意：比赛时只显示测样例的结果。显示的成绩<u>不是</u>最终成绩。</strong></p>
 	<?php elseif ($contest['extra_config']['contest_type']=='IOI'):?>
 	<p>此次比赛为IOI赛制。</p>
 	<p><strong>注意：比赛时显示测试所有数据的结果，但无法看到详细信息。</strong></p>
+	<?php elseif ($contest['extra_config']['contest_type']=='ACM'):?>
+	<p>此次比赛为ACM/ICPC赛制。</p>
+	<p><strong>注意：比赛时显示测试所有数据的结果，但无法看到详细信息。有罚时。</strong></p>
 	<?php endif?>
 	
 		<a href="/contest/<?=$contest['id']?>/registrants" class="btn btn-info btn-block"><?= UOJLocale::get('contests::contest registrants') ?></a>
