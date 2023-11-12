@@ -22,7 +22,7 @@
 	$options = array(
 		'banneduser' => '设为封禁用户',
 		'normaluser' => '设为普通用户',
-		'superuser' => '设为超级用户'
+		'superuser' => '设为超级用户(管理员)'
 	);
 	$user_form->addSelect('op-type', $options, '操作类型', '');
 	$user_form->handle = function() {
@@ -391,7 +391,7 @@ EOD;
 				<?php $contest_submissions_deleter->printHTML(); ?>
 			</div>
 			<div>
-				<h4>测评失败的提交记录</h4>
+				<h4>测评<b>失败的</b>提交记录</h4>
 				<?php echoSubmissionsList("result_error = 'Judgement Failed'", 'order by id desc', array('result_hidden' => ''), $myUser); ?>
 			</div>
 		<?php elseif ($cur_tab === 'custom-test'): ?>
