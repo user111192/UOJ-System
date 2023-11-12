@@ -244,6 +244,7 @@ EOD;
 				'statement' => '请仔细阅读题面（非公开）',
 				'no_comment' => '无可奉告（非公开）',
 				'no_play' => '请认真比赛（非公开）',
+				'no_copy' => '禁止抄袭（非公开）',
 			], '回复类型', 'private');
 			$reply_question->addVTextArea('rcontent', '回复', '', 
 				function($content) {
@@ -275,6 +276,9 @@ EOD;
 						break;
 					case 'no_play':
 						$content = '请认真比赛 (￣口￣)!!';
+						break;
+					case 'no_copy':
+						$content = '请不要抄袭 (￣口￣)!!';
 						break;
 					case 'public':
 						$is_hidden = 0;
