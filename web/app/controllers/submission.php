@@ -86,7 +86,7 @@
 			updateBestACSubmissions($submission['submitter'], $submission['problem_id']);
 		};
 		$delete_form->submit_button_config['class_str'] = 'btn btn-danger';
-		$delete_form->submit_button_config['text'] = '删除此提交记录';
+		$delete_form->submit_button_config['text'] = '删除此提交记录(危险!)';
 		$delete_form->submit_button_config['align'] = 'right';
 		$delete_form->submit_button_config['smart_confirm'] = '';
 		$delete_form->succ_href = "/submissions";
@@ -135,7 +135,7 @@
 	<?php echoSubmissionContent($submission, getProblemSubmissionRequirement($problem)) ?>
 	<?php if ($hackable): ?>
 		<p class="text-center">
-			这程序好像有点Bug，我给组数据试试？ <button id="button-display-hack" type="button" class="btn btn-danger btn-xs">Hack!</button>
+			这程序好像有点Bug，我给组数据试试？ <button id="button-display-hack" type="button" class="btn btn-danger btn-xs">Hack it!</button>
 		</p>
 		<div id="div-form-hack" style="display:none" class="bot-buffer-md">
 			<?php $hack_form->printHTML() ?>
@@ -147,6 +147,10 @@
 				});
 			});
 		</script>
+	<?php else: ?>
+		<p class="text-center">
+			这道题不能hack。这程序好像有点Bug，联系出题人？
+		</p>
 	<?php endif ?>
 <?php endif ?>
 
