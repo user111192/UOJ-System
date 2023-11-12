@@ -98,12 +98,12 @@ function submitLoginPost() {
 			$('#help-username').html('该用户已被封停，请联系管理员。');
 		} else if (msg == 'expired') {
 			$('#div-username').addClass('has-error');
-			$('#help-username').html('页面会话已过期。');
+			$('#help-username').html('页面会话已过期。请尝试<a href="javascript:void(0);" onclick="history.go(0);">刷新</a>页面。');
 		} else {
 			$('#div-username').addClass('has-error');
-			$('#help-username').html('用户名或密码错误。');
+			$('#help-username').html('用户名或密码错误。请仔细核对密码是否输错。');
 			$('#div-password').addClass('has-error');
-			$('#help-password').html('用户名或密码错误。<a href="/forgot-password">忘记密码？</a>');
+			$('#help-password').html('用户名或密码错误。请仔细核对密码是否输错。<a href="/forgot-password">忘记密码？</a>');
 		}
 	});
 	return true;
