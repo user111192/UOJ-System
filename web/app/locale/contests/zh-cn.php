@@ -22,8 +22,8 @@ return [
 	'contest notice' => '比赛通知',
 	'show all submissions' => '显示所有提交',
 	'contest ends in' => '距离比赛结束',
-	'contest pending final test' => '等待评测',
-	'contest final testing' => '正在测评',
+	'contest pending final test' => '等待最终评测',
+	'contest final testing' => '正在最终测评',
 	'contest ended' => '比赛已结束',
 	'contest registrants' => '报名选手列表'
 ];
