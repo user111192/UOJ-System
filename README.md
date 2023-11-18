@@ -23,9 +23,23 @@
 
 [![CodeQL](https://github.com/user111192/UOJ-System/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/user111192/UOJ-System/actions/workflows/github-code-scanning/codeql) [![Create and publish a Docker image](https://github.com/user111192/UOJ-System/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/user111192/UOJ-System/actions/workflows/docker-publish.yml) [![Docker Image CI](https://github.com/user111192/UOJ-System/actions/workflows/docker-image.yml/badge.svg)](https://github.com/user111192/UOJ-System/actions/workflows/docker-image.yml) [![Main](https://github.com/user111192/UOJ-System/actions/workflows/lint.yml/badge.svg)](https://github.com/user111192/UOJ-System/actions/workflows/lint.yml)
 
+![Static Badge](https://img.shields.io/badge/uoj-modified-blue) ![Static Badge](https://img.shields.io/badge/modified-blue)
+
+
+
 ## 感谢
 
 - [vfleaking](https://github.com/vfleaking) 将 UOJ 代码[开源](https://github.com/vfleaking/uoj)
 - 向原项目或本项目贡献代码的人
 - 给我们启发与灵感以及提供意见和建议的人
 
+## Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
