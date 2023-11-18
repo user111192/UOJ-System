@@ -62,8 +62,8 @@ return [
 	're-enter your new password' => '重新输入新密码',
 	'enter your QQ' => '输入QQ',
 	'refuse to answer' => '拒绝回答',
-	'male' => '男',
-	'female' => '女',
+	'male' => '男 (M)',
+	'female' => '女 (F)',
 	'server time' => '服务器时间',
 	'opensource project' => '开源项目'
 ];
