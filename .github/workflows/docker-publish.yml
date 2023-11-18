@@ -59,4 +59,8 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+      - name: The job has succeeded
+        if: ${{ success() }}
+      - name: The job has failed
+        if: ${{ failure() }}
           
