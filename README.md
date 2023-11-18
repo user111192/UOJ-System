@@ -19,6 +19,10 @@
 
 有关安装、管理、维护，可参阅：[https://universaloj.github.io/](https://universaloj.github.io/)
 
+## 状态
+
+[![CodeQL](https://github.com/user111192/UOJ-System/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/user111192/UOJ-System/actions/workflows/github-code-scanning/codeql) [![Create and publish a Docker image](https://github.com/user111192/UOJ-System/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/user111192/UOJ-System/actions/workflows/docker-publish.yml) [![Docker Image CI](https://github.com/user111192/UOJ-System/actions/workflows/docker-image.yml/badge.svg)](https://github.com/user111192/UOJ-System/actions/workflows/docker-image.yml) [![Main](https://github.com/user111192/UOJ-System/actions/workflows/lint.yml/badge.svg)](https://github.com/user111192/UOJ-System/actions/workflows/lint.yml)
+
 ## 感谢
 
 - [vfleaking](https://github.com/vfleaking) 将 UOJ 代码[开源](https://github.com/vfleaking/uoj)
