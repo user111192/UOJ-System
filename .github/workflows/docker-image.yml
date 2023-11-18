@@ -18,4 +18,4 @@ jobs:
     - name: Prepare
       run: echo "Prepareing..." && exit
     - name: Build the Docker image
-      run: docker build . --file install/bundle/Dockerfile --tag user111192/UOJ-System:$(date +%s)
+      run: docker build . --file install/bundle/Dockerfile --tag user111192/uoj-system:$(date +%s)
