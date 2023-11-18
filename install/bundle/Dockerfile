@@ -1,5 +1,5 @@
 FROM ubuntu:20.04
-MAINTAINER MascoSkray <MascoSkray@gmail.com>
+MAINTAINER MascoSkray <3538995003@qq.com>
 ARG CLONE_ADDFLAG
 
 WORKDIR /opt
