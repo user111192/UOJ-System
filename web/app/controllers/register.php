@@ -35,6 +35,7 @@
 		
 		$svn_pw = uojRandString(10);
 		if (!DB::selectCount("SELECT COUNT(*) FROM user_info")) {
+			// 第一个账户是管理员
 			DB::query("insert into user_info (username, email, password, svn_password, register_time, usergroup) values ('$username', '$esc_email', '$password', '$svn_pw', now(), 'S')");
 		} else {
 			DB::query("insert into user_info (username, email, password, svn_password, register_time) values ('$username', '$esc_email', '$password', '$svn_pw', now())");

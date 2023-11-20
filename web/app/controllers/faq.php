@@ -23,7 +23,8 @@
 					<p>如果你正在为没有地方测奇奇怪怪的题目而苦恼，那么你来对地方了。</p>
 					<p>当然了，<?= UOJConfig::$data['profile']['oj-name-short'] ?>对于传统题的评测也做了特别支持。平时做题时我很难容忍的地方就是数据出水了导致暴力得了好多分甚至过了，而出题人却委屈地说，总共才一百分，卡了这个暴力就不能卡另一个暴力，所以暴力过了就过了吧。</p>
 					<p>所以我们引入了Extra Tests和Hack机制。每道传统题的数据都分为Tests和Extra Tests，Tests满分100分，如果你通过了所有的Tests，那么就会为你测Extra Tests。如果过了Tests但没过Extra Tests那么倒扣3分变为97分。Extra Tests的来源，一个是这道题没什么人可能会错的边界情况可以放在里面，另一个就是各位平时做题的时候，如果发现错误算法AC了，可以使用hack将其卡掉，<?= UOJConfig::$data['profile']['oj-name-short'] ?>会自动加入Extra Tests并重测。我们无法阻止暴力高分的脚步，但是不让他得满分还是有心里安慰作用的～</p>
-					<p><?= UOJConfig::$data['profile']['oj-name-short'] ?>还有比赛功能可以承办比赛，赛制暂时只支持OI赛制。（不过你可以利用现有方案变相实现ACM赛制！）未来将支持更多种多样的赛制甚至自定义赛制。</p>
+					<p><?= UOJConfig::$data['profile']['oj-name-short'] ?>还有比赛功能可以承办比赛，赛制暂时只支持OI、IOI赛制。（不过你可以利用现有方案变相实现ACM赛制！）</p>
+					<p>未来将支持更多种多样的赛制甚至自定义赛制。</p>
 					<p>目前<?= UOJConfig::$data['profile']['oj-name-short'] ?>刚刚起步，还有很多地方有待完善。想出题、想出比赛、发现BUG、发现槽点都可以联系我们，联系方式见下。</p>
 					<p>祝各位在<?= UOJConfig::$data['profile']['oj-name-short'] ?>玩得愉快！（求不虐萌萌哒服务器～求不虐萌萌哒测评机～！）</p>
 					<p><img src="/images/utility/qpx_n/b54.gif" alt="小熊抱抱" /></p>
@@ -38,6 +39,7 @@
 				<div class="card-body">
 					<p><?= UOJConfig::$data['profile']['oj-name-short'] ?>不提供头像存储服务。每到一个网站都要上传一个头像挺烦的对不对？我们支持Gravatar，请使用Gravatar吧！Gravatar是一个全球的头像存储服务，你的头像将会与你的电子邮箱绑定。在各大网站比如各种Wordpress还有各种OJ比如Vijos、Contest Hunter上，只要你电子邮箱填对了，那么你的头像也就立即能显示了！</p>
 					<p>快使用Gravatar吧！ Gravatar地址：<a href="https://cn.gravatar.com/">https://cn.gravatar.com/</a>。进去后注册个帐号然后与邮箱绑定并上传头像，就ok啦！</p>
+					<p><del>当然在中国无法访问Gravatar, 所以没啥用</del></p>
 				</div>
 			</div>
 		</div>
@@ -49,11 +51,12 @@
 				<div class="card-body">
 					<p>默认的测评环境是 Ubuntu Linux 20.04 LTS x64。</p>
 					<p>C的编译器是 gcc 9.3.0，编译命令：<code>gcc code.c -o code -lm -O2 -DONLINE_JUDGE</code>。</p>
-					<p>C++的编译器是 g++ 9.3.0，编译命令：<code>g++ code.cpp -o code -lm -O2 -DONLINE_JUDGE</code>。如果选择C++11会在编译命令后面添加<code>-std=c++11</code>。</p>
+					<p>C++的编译器是 g++ 9.3.0，编译命令：<code>g++ code.cpp -o code -lm -O2 -DONLINE_JUDGE</code>。</p>
+					<p>如果选择C++11会在编译命令后面添加<code>-std=c++11</code>。</p>
 					<p>Java8的JDK版本是 openjdk 1.8.0_275，编译命令：<code>javac code.java</code>。</p>
 					<p>Java11的JDK版本是 openjdk 11.0.9，编译命令：<code>javac code.java</code>。</p>
 					<p>Pascal的编译器是 fpc 3.0.4，编译命令：<code>fpc code.pas -O2</code>。</p>
-					<p>Python会先编译为优化过的字节码<samp>.pyo</samp>文件。支持的Python版本分别为Python 2.7和3.8。</p>
+					<p>Python会先编译为优化过的字节码<samp>.pyo</samp>文件。支持的Python版本分别为Python <del>2.7</del>和3.8。</p>
 				</div>
 			</div>
 		</div>
@@ -70,8 +73,8 @@
 						<li>Time Limit Exceeded: 时间超限。请检查程序是否有死循环，或者应该有更快的计算方法。</li>
 						<li>Memory Limit Exceeded: 内存超限。数据可能需要压缩，或者您数组开太大了，请检查是否有内存泄露。</li>
 						<li>Output Limit Exceeded: 输出超限。你的输出居然比正确答案长了两倍！</li>
-						<li>Dangerous Syscalls: 危险系统调用，你是不是带了文件，或者使用了某些有意思的system函数？</li>
-						<li>Judgement Failed: 评测失败。可能是评测机抽风了，也可能是服务器正在睡觉；反正不一定是你的锅啦！</li>
+						<li>Dangerous Syscalls: 危险系统调用，你是不是带了文件，或者<b>使用了某些有意思的system函数？</b></li>
+						<li>Judgement Failed: 评测失败。可能是评测机抽风了，也可能是服务器正在睡觉；<b>反正不一定是你的锅啦！</b></li>
 						<li>No Comment: 没有详情。评测机对您的程序无话可说，那么我们也不知道到底发生了什么...</li>
 					</ul>
 				</div>
@@ -89,7 +92,7 @@
 		</div>
 		<div class="card my-1">
 			<div class="card-header collapsed" id="headerSix" data-toggle="collapse" data-target="#collapseSix" style="cursor:pointer;">
-				<h5 class="mb-0">我在本地/某某OJ上AC了，但在<?= UOJConfig::$data['profile']['oj-name-short'] ?>却过不了...这咋办？</h5>
+				<h5 class="mb-0">我在本地/XXOJ上AC了，但在<?= UOJConfig::$data['profile']['oj-name-short'] ?>却过不了...这咋办？</h5>
 			</div>
 			<div id="collapseSix" class="collapse">
 				<div class="card-body">
@@ -184,6 +187,16 @@
 					<p>什么你是萌萌哒Pascal选手？一般来说都会给个grader，你需要写一个Pascal单元。这个grader会使用你的单元。所以你只需要把源文件取名为单元名 + <code>.pas</code>，然后：</p>
 					<p>对于Pascal语言：<code>fpc grader.pas</code></p>
 					<p>就可以啦！</p>
+				</div>
+			</div>
+		</div>
+		<div class="card my-1">
+			<div class="card-header collapsed" id="headerEight" data-toggle="collapse" data-target="#collapseEight" style="cursor:pointer;">
+				<h5 class="mb-0">我被ban了！怎么办？</h5>
+			</div>
+			<div id="collapseEight" class="collapse">
+				<div class="card-body">
+					<p>唔……好问题。交互式的题一般给了一个头文件要你include进来，以及一个实现接口的源文件grader。好像大家对多个源文件一起编译还不太熟悉。</p>
 				</div>
 			</div>
 		</div>

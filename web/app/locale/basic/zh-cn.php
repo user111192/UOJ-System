@@ -60,7 +60,7 @@ return [
 	're-enter your password' => '重新输入密码',
 	'enter your new password' => '输入新密码',
 	're-enter your new password' => '重新输入新密码',
-	'enter your QQ' => '输入QQ',
+	'enter your QQ' => '输入QQ号',
 	'refuse to answer' => '拒绝回答',
 	'male' => '男 (M)',
 	'female' => '女 (F)',

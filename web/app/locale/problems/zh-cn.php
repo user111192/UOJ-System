@@ -18,7 +18,7 @@ return [
 	'source code' => '源文件',
 	'text file' => '文本文件',
 	'zip file upload introduction' => function($str) {
-		return "上传一个zip压缩文件，包含 {$str}：";
+		return "<strong>zip上传</strong> 上传一个zip压缩文件，包含 {$str}：";
 	},
 	'or upload files one by one' => '或者逐个上传：',
 	'accepted submissions' => '满分提交',
