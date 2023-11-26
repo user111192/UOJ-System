@@ -191,7 +191,7 @@
 			</div>
 		</div>
 		<div class="card my-1">
-			<div class="card-header collapsed" id="headerEight" data-toggle="collapse" data-target="#collapseEight" style="cursor:pointer;">
+			<div class="card-header collapsed" id="headerNine" data-toggle="collapse" data-target="#collapseNine" style="cursor:pointer;">
 				<h5 class="mb-0">我被ban了！怎么办？</h5>
 			</div>
 			<div id="collapseEight" class="collapse">
@@ -201,7 +201,7 @@
 			</div>
 		</div>
 		<div class="card my-1">
-			<div class="card-header collapsed" id="headerNine" data-toggle="collapse" data-target="#collapseNine" style="cursor:pointer;">
+			<div class="card-header collapsed" id="headerTen" data-toggle="collapse" data-target="#collapseTen" style="cursor:pointer;">
 				<h5 class="mb-0">联系方式</h5>
 			</div>
 			<div id="collapseNine" class="collapse">

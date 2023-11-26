@@ -19,6 +19,10 @@
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 					<a class="dropdown-item" href="<?= HTML::url('/paste') ?>"><span class="glyphicon glyphicon-paste"></span> 代码分享 </a>
 					<a class="dropdown-item" href="<?= HTML::url('/map_visualizer') ?>"><span class="glyphicon glyphicon-retweet"></span> 图可视化 </a>
+					<a class="dropdown-item" href="<?= HTML::url('/logout?_token='.crsf_token()) ?>"><span class="glyphicon glyphicon-retweet"></span> 一键登出 </a>
+					<?php if (isSuperUser(Auth::user())): ?>
+						<a class="dropdown-item" href="<?= HTML::url('/super-manage') ?>"><span class="glyphicon glyphicon-retweet"></span> <?= UOJLocale::get('system manage') ?></a>
+					<?php endif ?>
 				</div>
 			</li>
 		</ul>

@@ -20,7 +20,7 @@ return [
 	'zip file upload introduction' => function($str) {
 		return "<strong>zip上传</strong> 上传一个zip压缩文件，包含 {$str}：";
 	},
-	'or upload files one by one' => '或者逐个上传：',
+	'or upload files one by one' => '<strong>逐个上传</strong> 或者逐个上传：',
 	'accepted submissions' => '满分提交',
 	'fastest' => '最快',
 	'shortest' => '最短',

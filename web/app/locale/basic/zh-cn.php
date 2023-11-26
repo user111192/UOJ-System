@@ -50,7 +50,7 @@ return [
 	'n problems in total' => function($n) {
 		return "共 $n 道题";
 	},
-	'please enter your password for authorization' => '请输入您的密码进行身份验证',
+	'please enter your password for authorization' => '<span style="color:red">*</span> 请输入您的密码进行身份验证',
 	'please enter your new profile' => '请输入新的个人信息',
 	'leave it blank if you do not want to change the password' => '如果不想修改密码请留空',
 	'change avatar help' => '想改头像？见<a href="/faq">帮助</a>',

@@ -8,6 +8,10 @@ function validatePassword($password) {
 	return is_string($password) && preg_match('/^[a-z0-9]{32}$/', $password);
 }
 
+function validateStrongPassword($password) {
+	return is_string($password) && sizeof($password) >= 6;
+}
+
 function validateEmail($email) {
 	return is_string($email) && strlen($email) <= 50 && preg_match('/^(.+)@(.+)$/', $email);
 }
